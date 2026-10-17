@@ -46,13 +46,13 @@
           const destination = backend.origin + "/" + hash;
           document.getElementById("enter").href = destination;
           document.getElementById("enter").hidden = false;
-          // This probe sends no login credentials and reads no private data.
-          // A protected 401 response still proves HTTPS is reachable. Do not
-          // navigate automatically when TLS verification or networking fails.
-          await fetch(backend.origin + "/", {
-            mode: "no-cors", credentials: "omit", cache: "no-store",
+          // Only the readiness response is public. All workspaces and data
+          // require authentication. Refuse bad TLS or an unexpected response.
+          const health = await fetch(backend.origin + "/_mrb/health", {
+            mode: "cors", credentials: "omit", cache: "no-store",
             signal: AbortSignal.timeout(8000),
           });
+          if (!health.ok || (await health.json()).status !== "ok") throw new Error("入口不可用");
           location.replace(destination);
         } catch {
           document.getElementById("status").textContent = "暂时无法连接工作台，请检查网络后重新连接。";
