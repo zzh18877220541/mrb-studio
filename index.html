@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>MRB Studio</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; color: #141413; background: #faf9f5; }
+      body { min-height: 85vh; display: grid; place-items: center; margin: 24px; }
+      main { width: min(100%, 440px); }
+      small { color: #827d73; letter-spacing: .16em; }
+      h1 { font-family: Georgia, serif; font-size: 46px; font-weight: 400; margin: 20px 0; }
+      p { color: #6c685f; line-height: 1.8; }
+      a { display: inline-block; padding: 12px 20px; background: #141413; color: #faf9f5; text-decoration: none; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <small>MULTI-ROBOT BENCH</small>
+      <h1>MRB Studio</h1>
+      <p id="status" role="status">正在连接工作台。首次访问需要输入你的工作台账号和密码。</p>
+      <a id="enter" href="https://8.133.221.86/#scenes" rel="noreferrer">进入工作台</a>
+      <p><button id="retry" hidden>重新连接</button></p>
+    </main>
+    <script>
+      const allowed = new Set(["#scenes", "#assets", "#episodes", "#annotate"]);
+      const hash = allowed.has(location.hash) ? location.hash : "#scenes";
+      const destination = "https://8.133.221.86/" + hash;
+      document.getElementById("enter").href = destination;
+      async function connect() {
+        document.getElementById("retry").hidden = true;
+        document.getElementById("status").textContent = "正在连接工作台…";
+        try {
+          // This probe sends no login credentials and reads no private data.
+          // A protected 401 response still proves HTTPS is reachable. Do not
+          // navigate automatically when TLS verification or networking fails.
+          await fetch("https://8.133.221.86/", {
+            mode: "no-cors", credentials: "omit", cache: "no-store",
+            signal: AbortSignal.timeout(8000),
+          });
+          location.replace(destination);
+        } catch {
+          document.getElementById("status").textContent = "暂时无法连接工作台，请检查网络后重新连接。";
+          document.getElementById("retry").hidden = false;
+        }
+      }
+      document.getElementById("retry").onclick = connect;
+      connect();
+    </script>
+  </body>
+</html>
