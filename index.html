@@ -27,7 +27,7 @@
       <p><button id="retry" hidden>重新连接</button></p>
     </main>
     <script>
-      const allowed = new Set(["#scenes", "#assets", "#episodes", "#annotate"]);
+      const allowed = new Set(["#scenes", "#assets", "#episodes", "#annotate", "#inference"]);
       const hash = allowed.has(location.hash) ? location.hash : "#scenes";
       async function connect() {
         document.getElementById("retry").hidden = true;
