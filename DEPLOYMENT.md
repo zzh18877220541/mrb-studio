@@ -44,6 +44,8 @@ systemctl status mrb-review mrb-annotate nginx mrb-tailscaled
 
 - `studio/tests/browser_deployment.py`：匿名和错误凭据拒绝，登录后场景、标注 iframe、JSON POST 校验、视频和精确 Range；不修改个人场景或资产标注。
 - `studio/tests/browser_pages_entry.py`：未配置状态、拒绝 HTTP、断网重试、真实登录网关和标注页面交接，保留 hash 路由。跨源测试使用模拟公网域名转发到仅本机 TLS 测试服务，避免 Chrome 的 loopback 权限机制与真实公网情况混淆。
+- `studio/tests/browser_pages_entry.py --live`：从实际 GitHub Pages 入口进入公网工作台，严格验证 TLS 和登录后的场景编辑页面。
+- `studio/tests/test_video_cache.py`：视频索引前置、逐帧校验无画质变化、缓存复用及源文件变化后失效。回放服务在 `data/cache/studio-video/` 按需生成无损重封装副本，不修改 episode 视频；可以删除缓存以回收空间。优先使用 `MRB_FFMPEG` 或系统 ffmpeg，其次使用当前运行环境的 `imageio_ffmpeg`；工具不可用时仍提供原视频。
 
 本机测试监听为 `127.0.0.1:9443`，使用临时自签名测试证书。允许忽略证书错误的测试参数只适用于这个 loopback 监听，不得用于公网验收。公网必须验证受信任证书。
 
