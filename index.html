@@ -22,7 +22,7 @@
     <main>
       <small>MULTI-ROBOT BENCH</small>
       <h1>MRB Studio</h1>
-      <p id="status" role="status">正在连接工作台。首次访问需要输入你的工作台账号和密码。</p>
+      <p id="status" role="status">正在连接工作台，无需输入账号或密码。</p>
       <a id="enter" hidden rel="noreferrer">进入工作台</a>
       <p><button id="retry" hidden>重新连接</button></p>
     </main>
@@ -46,8 +46,8 @@
           const destination = backend.origin + "/" + hash;
           document.getElementById("enter").href = destination;
           document.getElementById("enter").hidden = false;
-          // Only the readiness response is public. All workspaces and data
-          // require authentication. Refuse bad TLS or an unexpected response.
+          // Check readiness before opening the password-free workspace.
+          // Refuse bad TLS or an unexpected response.
           const health = await fetch(backend.origin + "/_mrb/health", {
             mode: "cors", credentials: "omit", cache: "no-store",
             signal: AbortSignal.timeout(8000),
