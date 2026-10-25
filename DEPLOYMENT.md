@@ -52,6 +52,8 @@ systemctl status mrb-review mrb-annotate nginx mrb-tailscaled
 
 本机测试监听为 `127.0.0.1:9443`，使用临时自签名测试证书。允许忽略证书错误的测试参数只适用于这个 loopback 监听，不得用于公网验收。公网必须验证受信任证书。
 
-GitHub 仓库只发布入口 HTML、端点配置、说明和 `.nojekyll`。资产、场景、标注、视频、服务器密钥和密码均不上传。
+GitHub 仓库默认只发布入口 HTML、端点配置、说明和 `.nojekyll`。资产、场景、标注、未授权公开视频、服务器密钥和密码均不上传。
+
+2026-10-25 按用户明确要求公开观看的演示录像，新增只读静态区 `replays/20261025/`，不修改原工作台或其访问策略。仅包含原本已授权公开的挂包、装车、花瓶、信息配对及抬筐演示视频与播放器。视频用 `-c copy -movflags +faststart` 前置索引，逐路核对码流SHA256与源录像一致；播放默认走Pages，可选jsDelivr备用线路。不含其他资产、轨迹、标注或凭据。
 
 参考：[Funnel 固定 DNS 与使用示例](https://tailscale.com/docs/reference/examples/funnel)、[后台运行与重启恢复](https://tailscale.com/docs/reference/tailscale-cli/funnel)、[限制](https://tailscale.com/docs/features/tailscale-funnel)。
