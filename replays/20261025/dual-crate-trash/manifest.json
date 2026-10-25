@@ -1,0 +1,324 @@
+{
+  "episodes": [
+    {
+      "id": "fixed-v7",
+      "title": "固定布局 · 私有观测全程通过",
+      "duration": 50.93333333333333,
+      "media": {
+        "overview": {
+          "video": "fixed-v7/overview.mp4",
+          "poster": "fixed-v7/overview.png"
+        },
+        "robot_a_head": {
+          "video": "fixed-v7/robot_a_head.mp4",
+          "poster": "fixed-v7/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "fixed-v7/robot_a_left_wrist.mp4",
+          "poster": "fixed-v7/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "fixed-v7/robot_a_right_wrist.mp4",
+          "poster": "fixed-v7/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "fixed-v7/robot_b_head.mp4",
+          "poster": "fixed-v7/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "fixed-v7/robot_b_left_wrist.mp4",
+          "poster": "fixed-v7/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "fixed-v7/robot_b_right_wrist.mp4",
+          "poster": "fixed-v7/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.899999999999999
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.14
+        },
+        {
+          "label": "放筐",
+          "time": 40.4
+        }
+      ]
+    },
+    {
+      "id": "random-v7-0",
+      "title": "随机布局 · seed 0",
+      "duration": 50.93333333333333,
+      "media": {
+        "overview": {
+          "video": "random-v7-0/overview.mp4",
+          "poster": "random-v7-0/overview.png"
+        },
+        "robot_a_head": {
+          "video": "random-v7-0/robot_a_head.mp4",
+          "poster": "random-v7-0/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "random-v7-0/robot_a_left_wrist.mp4",
+          "poster": "random-v7-0/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "random-v7-0/robot_a_right_wrist.mp4",
+          "poster": "random-v7-0/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "random-v7-0/robot_b_head.mp4",
+          "poster": "random-v7-0/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "random-v7-0/robot_b_left_wrist.mp4",
+          "poster": "random-v7-0/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "random-v7-0/robot_b_right_wrist.mp4",
+          "poster": "random-v7-0/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.830000000000002
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.000000000000004
+        },
+        {
+          "label": "放筐",
+          "time": 40.4
+        }
+      ]
+    },
+    {
+      "id": "random-v7-3",
+      "title": "随机布局 · seed 3",
+      "duration": 51.13333333333333,
+      "media": {
+        "overview": {
+          "video": "random-v7-3/overview.mp4",
+          "poster": "random-v7-3/overview.png"
+        },
+        "robot_a_head": {
+          "video": "random-v7-3/robot_a_head.mp4",
+          "poster": "random-v7-3/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "random-v7-3/robot_a_left_wrist.mp4",
+          "poster": "random-v7-3/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "random-v7-3/robot_a_right_wrist.mp4",
+          "poster": "random-v7-3/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "random-v7-3/robot_b_head.mp4",
+          "poster": "random-v7-3/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "random-v7-3/robot_b_left_wrist.mp4",
+          "poster": "random-v7-3/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "random-v7-3/robot_b_right_wrist.mp4",
+          "poster": "random-v7-3/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.899999999999999
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.240000000000002
+        },
+        {
+          "label": "放筐",
+          "time": 40.6
+        }
+      ]
+    },
+    {
+      "id": "random-v7-19",
+      "title": "随机布局 · seed 19",
+      "duration": 50.833333333333336,
+      "media": {
+        "overview": {
+          "video": "random-v7-19/overview.mp4",
+          "poster": "random-v7-19/overview.png"
+        },
+        "robot_a_head": {
+          "video": "random-v7-19/robot_a_head.mp4",
+          "poster": "random-v7-19/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "random-v7-19/robot_a_left_wrist.mp4",
+          "poster": "random-v7-19/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "random-v7-19/robot_a_right_wrist.mp4",
+          "poster": "random-v7-19/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "random-v7-19/robot_b_head.mp4",
+          "poster": "random-v7-19/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "random-v7-19/robot_b_left_wrist.mp4",
+          "poster": "random-v7-19/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "random-v7-19/robot_b_right_wrist.mp4",
+          "poster": "random-v7-19/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.899999999999999
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.34
+        },
+        {
+          "label": "放筐",
+          "time": 40.3
+        }
+      ]
+    },
+    {
+      "id": "corner-v7-low",
+      "title": "组合边界 · A",
+      "duration": 51.233333333333334,
+      "media": {
+        "overview": {
+          "video": "corner-v7-low/overview.mp4",
+          "poster": "corner-v7-low/overview.png"
+        },
+        "robot_a_head": {
+          "video": "corner-v7-low/robot_a_head.mp4",
+          "poster": "corner-v7-low/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "corner-v7-low/robot_a_left_wrist.mp4",
+          "poster": "corner-v7-low/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "corner-v7-low/robot_a_right_wrist.mp4",
+          "poster": "corner-v7-low/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "corner-v7-low/robot_b_head.mp4",
+          "poster": "corner-v7-low/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "corner-v7-low/robot_b_left_wrist.mp4",
+          "poster": "corner-v7-low/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "corner-v7-low/robot_b_right_wrist.mp4",
+          "poster": "corner-v7-low/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.84
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.1
+        },
+        {
+          "label": "放筐",
+          "time": 40.7
+        }
+      ]
+    },
+    {
+      "id": "corner-v7-high",
+      "title": "组合边界 · B",
+      "duration": 51.233333333333334,
+      "media": {
+        "overview": {
+          "video": "corner-v7-high/overview.mp4",
+          "poster": "corner-v7-high/overview.png"
+        },
+        "robot_a_head": {
+          "video": "corner-v7-high/robot_a_head.mp4",
+          "poster": "corner-v7-high/robot_a_head.png"
+        },
+        "robot_a_left_wrist": {
+          "video": "corner-v7-high/robot_a_left_wrist.mp4",
+          "poster": "corner-v7-high/robot_a_left_wrist.png"
+        },
+        "robot_a_right_wrist": {
+          "video": "corner-v7-high/robot_a_right_wrist.mp4",
+          "poster": "corner-v7-high/robot_a_right_wrist.png"
+        },
+        "robot_b_head": {
+          "video": "corner-v7-high/robot_b_head.mp4",
+          "poster": "corner-v7-high/robot_b_head.png"
+        },
+        "robot_b_left_wrist": {
+          "video": "corner-v7-high/robot_b_left_wrist.mp4",
+          "poster": "corner-v7-high/robot_b_left_wrist.png"
+        },
+        "robot_b_right_wrist": {
+          "video": "corner-v7-high/robot_b_right_wrist.mp4",
+          "poster": "corner-v7-high/robot_b_right_wrist.png"
+        }
+      },
+      "phases": [
+        {
+          "label": "抬起后",
+          "time": 13.0
+        },
+        {
+          "label": "第一次抓取",
+          "time": 15.93
+        },
+        {
+          "label": "第二次抓取",
+          "time": 30.1
+        },
+        {
+          "label": "放筐",
+          "time": 40.7
+        }
+      ]
+    }
+  ],
+  "expected_count": 6,
+  "publication_ready": true
+}
