@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panda 转盘｜原生物理示教 n=1–6</title>
+<style>body{max-width:980px;margin:28px auto;padding:0 18px;font:17px/1.6 system-ui,sans-serif;color:#222;background:#f7f4ed}h1{line-height:1.25}.status{border-left:4px solid #2a6848;padding:12px 16px;background:#eef4eb}button,a{display:inline-block;padding:10px 16px;margin:5px;border:1px solid #aaa;border-radius:8px;background:white;color:#222;cursor:pointer;text-decoration:none}button[aria-pressed=true]{background:#d7eadc;border-color:#2a6848;font-weight:bold}video{display:block;width:100%;max-height:72vh;margin:16px 0;background:#111}small{color:#555}</style></head>
+<body><h1>Panda 转盘：n=1–6 原生物理示教</h1>
+<p class="status">六条录像均来自 Isaac 原生物理完整执行，物理成功判据全部通过。当前 RGB 信息访问三项测试尚未完成，录制准入为 rejected；这些录像和轨迹是可审阅的示教候选，尚未进入正式数据集。</p>
+<p>固定 seed 0；每条只有一台 640×480、30 fps 的 overview RGB 相机。Panda 按顺序抓取盘缘、转动、松爪并换抓，最后回位。</p>
+<div id="choices" aria-label="选择机械臂数量"><button data-n="1" aria-pressed="true">n=1</button><button data-n="2" aria-pressed="false">n=2</button><button data-n="3" aria-pressed="false">n=3</button><button data-n="4" aria-pressed="false">n=4</button><button data-n="5" aria-pressed="false">n=5</button><button data-n="6" aria-pressed="false">n=6</button></div>
+<video id="demo" controls playsinline preload="metadata" src="n1.mp4"></video>
+<p><a id="download" href="n1.mp4" download="panda-round-board-native-n1.mp4">下载当前原始 MP4</a><a href="../../">回放目录</a></p>
+<p><small>录像与逐步 H5 轨迹、相机标定、物理判据和录制审计逐条对应；站点只公开 MP4，不含轨迹或源码。</small></p>
+<script>const video=document.getElementById('demo'),download=document.getElementById('download');document.querySelectorAll('#choices button').forEach(button=>{button.addEventListener('click',()=>{const n=button.dataset.n;document.querySelectorAll('#choices button').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));video.src='n'+n+'.mp4';video.load();download.href='n'+n+'.mp4';download.download='panda-round-board-native-n'+n+'.mp4';});});</script></body></html>
