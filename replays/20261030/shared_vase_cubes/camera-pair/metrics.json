@@ -1,0 +1,260 @@
+{
+  "original": {
+    "duration_s": 47.766666666666666,
+    "control_hz": 30,
+    "physical": "success",
+    "checks": {
+      "all_requested_cubes_inside": true,
+      "all_cubes_and_hands_stable_two_seconds": true,
+      "all_grippers_outside_shared_mouth": true,
+      "mouth_exclusive_entire_episode": true,
+      "robot_collision_free": true,
+      "robots_home": true,
+      "no_unexpected_robot_contact": true
+    },
+    "admission": "accepted",
+    "score": {
+      "schema": "mrb-task-score/1",
+      "revision": "vase-progress-efficiency-v1",
+      "total": null,
+      "maximum": 100,
+      "progress": 70.0,
+      "cooperation": null,
+      "cooperation_maximum": 30,
+      "cooperation_kind": "completion_efficiency_proxy",
+      "score_available": false,
+      "physical_success": true,
+      "stages": {
+        "pickup": {
+          "points": 30,
+          "earned": 30.0,
+          "count": 6
+        },
+        "insertion": {
+          "points": 40,
+          "earned": 40.0,
+          "count": 6
+        },
+        "efficiency": {
+          "points": 30,
+          "earned": null,
+          "calibrated": false,
+          "status": "reference_missing",
+          "completion_step": 1403,
+          "completion_s": 46.8,
+          "reference_s": null,
+          "reference": {
+            "revision": null,
+            "source_manifest": null,
+            "source_sha256": null,
+            "mean_completion_s_by_cube_count": {}
+          }
+        }
+      },
+      "objects": {
+        "cube_a_0": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 370,
+            "slot": "robot_a_left"
+          },
+          "insertion": {
+            "first_step": 1169
+          }
+        },
+        "cube_a_1": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 114,
+            "slot": "robot_a_right"
+          },
+          "insertion": {
+            "first_step": 418
+          }
+        },
+        "cube_a_2": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 83,
+            "slot": "robot_a_left"
+          },
+          "insertion": {
+            "first_step": 275
+          }
+        },
+        "cube_b_0": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 94,
+            "slot": "robot_b_right"
+          },
+          "insertion": {
+            "first_step": 722
+          }
+        },
+        "cube_b_1": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 108,
+            "slot": "robot_b_left"
+          },
+          "insertion": {
+            "first_step": 555
+          }
+        },
+        "cube_b_2": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 887,
+            "slot": "robot_b_right"
+          },
+          "insertion": {
+            "first_step": 1271
+          }
+        }
+      },
+      "agents": {
+        "robot_a": {
+          "target_count": 3,
+          "pickup_count": 3,
+          "insertion_count": 3
+        },
+        "robot_b": {
+          "target_count": 3,
+          "pickup_count": 3,
+          "insertion_count": 3
+        }
+      },
+      "credit": "per-object historical progress; efficiency only on current safe full success; missing reference is unavailable"
+    }
+  },
+  "near": {
+    "duration_s": 47.766666666666666,
+    "control_hz": 30,
+    "physical": "success",
+    "checks": {
+      "all_requested_cubes_inside": true,
+      "all_cubes_and_hands_stable_two_seconds": true,
+      "all_grippers_outside_shared_mouth": true,
+      "mouth_exclusive_entire_episode": true,
+      "robot_collision_free": true,
+      "robots_home": true,
+      "no_unexpected_robot_contact": true
+    },
+    "admission": "accepted",
+    "score": {
+      "schema": "mrb-task-score/1",
+      "revision": "vase-progress-efficiency-v1",
+      "total": null,
+      "maximum": 100,
+      "progress": 70.0,
+      "cooperation": null,
+      "cooperation_maximum": 30,
+      "cooperation_kind": "completion_efficiency_proxy",
+      "score_available": false,
+      "physical_success": true,
+      "stages": {
+        "pickup": {
+          "points": 30,
+          "earned": 30.0,
+          "count": 6
+        },
+        "insertion": {
+          "points": 40,
+          "earned": 40.0,
+          "count": 6
+        },
+        "efficiency": {
+          "points": 30,
+          "earned": null,
+          "calibrated": false,
+          "status": "reference_missing",
+          "completion_step": 1403,
+          "completion_s": 46.8,
+          "reference_s": null,
+          "reference": {
+            "revision": null,
+            "source_manifest": null,
+            "source_sha256": null,
+            "mean_completion_s_by_cube_count": {}
+          }
+        }
+      },
+      "objects": {
+        "cube_a_0": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 370,
+            "slot": "robot_a_left"
+          },
+          "insertion": {
+            "first_step": 1169
+          }
+        },
+        "cube_a_1": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 114,
+            "slot": "robot_a_right"
+          },
+          "insertion": {
+            "first_step": 418
+          }
+        },
+        "cube_a_2": {
+          "owner": "robot_a",
+          "pickup": {
+            "first_step": 83,
+            "slot": "robot_a_left"
+          },
+          "insertion": {
+            "first_step": 275
+          }
+        },
+        "cube_b_0": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 94,
+            "slot": "robot_b_right"
+          },
+          "insertion": {
+            "first_step": 722
+          }
+        },
+        "cube_b_1": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 108,
+            "slot": "robot_b_left"
+          },
+          "insertion": {
+            "first_step": 555
+          }
+        },
+        "cube_b_2": {
+          "owner": "robot_b",
+          "pickup": {
+            "first_step": 887,
+            "slot": "robot_b_right"
+          },
+          "insertion": {
+            "first_step": 1271
+          }
+        }
+      },
+      "agents": {
+        "robot_a": {
+          "target_count": 3,
+          "pickup_count": 3,
+          "insertion_count": 3
+        },
+        "robot_b": {
+          "target_count": 3,
+          "pickup_count": 3,
+          "insertion_count": 3
+        }
+      },
+      "credit": "per-object historical progress; efficiency only on current safe full success; missing reference is unavailable"
+    }
+  }
+}
