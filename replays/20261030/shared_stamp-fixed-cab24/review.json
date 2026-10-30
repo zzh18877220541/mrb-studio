@@ -1,0 +1,113 @@
+{
+  "task": "shared_stamp",
+  "title": "共用印章 · 新版固定场景",
+  "seed": 0,
+  "expert_s": 64.93,
+  "physical": "success",
+  "admission": "accepted",
+  "clamped_steps": 0,
+  "checks": [
+    {
+      "id": "all_four_imprints",
+      "label": "all_four_imprints",
+      "passed": true
+    },
+    {
+      "id": "all_papers_stamped_in_place",
+      "label": "all_papers_stamped_in_place",
+      "passed": true
+    },
+    {
+      "id": "papers_remained_in_place",
+      "label": "papers_remained_in_place",
+      "passed": true
+    },
+    {
+      "id": "no_paper_grasped",
+      "label": "no_paper_grasped",
+      "passed": true
+    },
+    {
+      "id": "four_tool_checkouts",
+      "label": "four_tool_checkouts",
+      "passed": true
+    },
+    {
+      "id": "four_tool_returns",
+      "label": "four_tool_returns",
+      "passed": true
+    },
+    {
+      "id": "papers_not_overlapping",
+      "label": "papers_not_overlapping",
+      "passed": true
+    },
+    {
+      "id": "papers_stable_two_seconds",
+      "label": "papers_stable_two_seconds",
+      "passed": true
+    },
+    {
+      "id": "stamp_returned_stable",
+      "label": "stamp_returned_stable",
+      "passed": true
+    },
+    {
+      "id": "shared_region_exclusive",
+      "label": "shared_region_exclusive",
+      "passed": true
+    },
+    {
+      "id": "one_card_per_checkout",
+      "label": "one_card_per_checkout",
+      "passed": true
+    },
+    {
+      "id": "both_single_arms_participated",
+      "label": "both_single_arms_participated",
+      "passed": true
+    },
+    {
+      "id": "robots_home",
+      "label": "机器人回到原位",
+      "passed": true
+    },
+    {
+      "id": "no_unexpected_robot_contact",
+      "label": "无意外机器人接触",
+      "passed": true
+    }
+  ],
+  "views": [
+    {
+      "camera": "overview",
+      "label": "总览",
+      "file": "video/overview.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": "30/1",
+      "duration_s": 66.0
+    },
+    {
+      "camera": "robot_a_left_wrist",
+      "label": "A 左腕",
+      "file": "video/robot_a_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 66.0
+    },
+    {
+      "camera": "robot_b_left_wrist",
+      "label": "B 左腕",
+      "file": "video/robot_b_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 66.0
+    }
+  ],
+  "scope": "固定场景 seed0 完整执行，保留原B阶段纸片次序与微扰；四次独立取章、盖章、归还，不启用C布局回放。",
+  "user_review": "待动作审阅确认",
+  "coverage": "本页只展示seed0单条，不代表三个seed均通过"
+}

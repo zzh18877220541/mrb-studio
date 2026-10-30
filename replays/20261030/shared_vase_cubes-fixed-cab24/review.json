@@ -1,0 +1,114 @@
+{
+  "task": "shared_vase_cubes",
+  "title": "共用花瓶 · 新版固定场景",
+  "seed": 0,
+  "expert_s": 44.8,
+  "physical": "success",
+  "admission": "accepted",
+  "clamped_steps": 0,
+  "checks": [
+    {
+      "id": "all_requested_cubes_inside",
+      "label": "all_requested_cubes_inside",
+      "passed": true
+    },
+    {
+      "id": "all_cubes_and_hands_stable_two_seconds",
+      "label": "all_cubes_and_hands_stable_two_seconds",
+      "passed": true
+    },
+    {
+      "id": "all_grippers_outside_shared_mouth",
+      "label": "all_grippers_outside_shared_mouth",
+      "passed": true
+    },
+    {
+      "id": "mouth_exclusive_entire_episode",
+      "label": "mouth_exclusive_entire_episode",
+      "passed": true
+    },
+    {
+      "id": "robot_collision_free",
+      "label": "robot_collision_free",
+      "passed": true
+    },
+    {
+      "id": "robots_home",
+      "label": "机器人回到原位",
+      "passed": true
+    },
+    {
+      "id": "no_unexpected_robot_contact",
+      "label": "无意外机器人接触",
+      "passed": true
+    }
+  ],
+  "views": [
+    {
+      "camera": "overview",
+      "label": "总览",
+      "file": "video/overview.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_a_head",
+      "label": "A 主视角",
+      "file": "video/robot_a_head.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_a_left_wrist",
+      "label": "A 左腕",
+      "file": "video/robot_a_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_a_right_wrist",
+      "label": "A 右腕",
+      "file": "video/robot_a_right_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_b_head",
+      "label": "B 主视角",
+      "file": "video/robot_b_head.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_b_left_wrist",
+      "label": "B 左腕",
+      "file": "video/robot_b_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 47.767
+    },
+    {
+      "camera": "robot_b_right_wrist",
+      "label": "B 右腕",
+      "file": "video/robot_b_right_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 47.767
+    }
+  ],
+  "scope": "固定标称布局六块方块完整执行，四臂通过实测瓶口占用争用同一空域；原七项物理判据保持。",
+  "user_review": "待动作审阅确认",
+  "coverage": "本页只展示seed0单条，不代表三个seed均通过"
+}
