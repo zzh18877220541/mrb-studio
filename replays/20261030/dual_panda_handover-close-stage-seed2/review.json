@@ -1,0 +1,83 @@
+{
+  "task": "dual_panda_handover",
+  "title": "挂包 · 近端提速版 · seed2 单条",
+  "seed": 2,
+  "expert_s": 42.8,
+  "physical": "success",
+  "admission": "accepted",
+  "clamped_steps": 0,
+  "checks": [
+    {
+      "id": "physical_pickup",
+      "label": "A 实际提起并持续持包",
+      "passed": true
+    },
+    {
+      "id": "release_force_and_duration",
+      "label": "B 双指超过20N持续超过1秒后交接",
+      "passed": true
+    },
+    {
+      "id": "measured_air_handover",
+      "label": "A 松手后B独立空中持包1秒",
+      "passed": true
+    },
+    {
+      "id": "bag_never_dropped",
+      "label": "提起后全程不掉包",
+      "passed": true
+    },
+    {
+      "id": "released_peg_support_at_home",
+      "label": "双机松爪回位时挂杆独立承重",
+      "passed": true
+    },
+    {
+      "id": "inactive_arms_stayed_home",
+      "label": "闲置臂全程保持原位",
+      "passed": true
+    },
+    {
+      "id": "robots_home",
+      "label": "机器人回到原位",
+      "passed": true
+    },
+    {
+      "id": "no_unexpected_robot_contact",
+      "label": "无意外机器人接触",
+      "passed": true
+    }
+  ],
+  "views": [
+    {
+      "camera": "overview",
+      "label": "总览",
+      "file": "video/overview.mp4",
+      "width": 640,
+      "height": 480,
+      "fps": "30/1",
+      "duration_s": 42.8
+    },
+    {
+      "camera": "robot_a_left_wrist",
+      "label": "A 左腕",
+      "file": "video/robot_a_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 42.8
+    },
+    {
+      "camera": "robot_b_left_wrist",
+      "label": "B 左腕",
+      "file": "video/robot_b_left_wrist.mp4",
+      "width": 320,
+      "height": 240,
+      "fps": "30/1",
+      "duration_s": 42.8
+    }
+  ],
+  "scope": "Studio 已选布局下的完整挂包专家执行。专家用时42.80秒；本页展示seed2，包括抓取、交接、挂上、释放与双机回位。",
+  "user_review": "待动作审阅确认",
+  "coverage": "本页只展示seed2单条，不代表三个seed均通过"
+}
