@@ -1,0 +1,32 @@
+name: Recover owner turn Pages deployment lock
+on:
+  push:
+    branches: [codex/turn-pages-recover-20261101]
+    paths: [.github/workflows/turn-pages-recover-20261101.yml]
+permissions:
+  contents: read
+  pages: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect and cancel only owner stale B deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import os,json,urllib.request
+          base='https://api.github.com/repos/zzh18877220541/mrb-studio/pages/deployments/c1da95a1c3db82356b93071476de1cf932c9ab54'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10'}
+          with urllib.request.urlopen(urllib.request.Request(base,headers=headers),timeout=30) as r:
+              state=json.load(r)
+          print('owner_B_deployment_state',json.dumps(state))
+          status=state.get('status')
+          if status in ['queued','pending','deployment_pending','deployment_in_progress','syncing_files']:
+              with urllib.request.urlopen(urllib.request.Request(base+'/cancel',headers=headers,method='POST'),timeout=30) as r:
+                  print('owner_B_cancel_http_status',r.status)
+          elif status in ['succeed','success','cancelled','canceled','failed','failure']:
+              print('already_terminal_no_mutation')
+          else:
+              raise RuntimeError('Unknown deployment state; no mutation performed')
