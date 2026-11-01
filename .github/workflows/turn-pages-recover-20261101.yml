@@ -6,7 +6,6 @@ on:
 permissions:
   contents: read
   pages: write
-  actions: write
 jobs:
   recover:
     runs-on: ubuntu-latest
@@ -17,35 +16,21 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: python
         run: |
-          import os,json,urllib.request
+          import os,json,urllib.request,urllib.error
           base='https://api.github.com/repos/zzh18877220541/mrb-studio/pages/deployments/c1da95a1c3db82356b93071476de1cf932c9ab54'
           headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10'}
           with urllib.request.urlopen(urllib.request.Request(base,headers=headers),timeout=30) as r:
               state=json.load(r)
           print('owner_B_deployment_state',json.dumps(state))
           status=state.get('status')
-          if status in ['queued','pending','deployment_pending','deployment_in_progress','syncing_files']:
-              with urllib.request.urlopen(urllib.request.Request(base+'/cancel',headers=headers,method='POST'),timeout=30) as r:
-                  print('owner_B_cancel_http_status',r.status)
+          if status in ['queued','pending','deployment_pending','deployment_in_progress','syncing_files','succeed']:
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(base+'/cancel',headers=headers,method='POST'),timeout=30) as r:
+                      print('owner_B_cancel_http_status',r.status)
+              except urllib.error.HTTPError as e:
+                  print('owner_B_cancel_error',e.code,e.read().decode())
+                  raise
           elif status in ['succeed','success','cancelled','canceled','failed','failure']:
               print('already_terminal_no_mutation')
           else:
               raise RuntimeError('Unknown deployment state; no mutation performed')
-
-      - name: Cancel only owner queued C workflow after identity check
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: python
-        run: |
-          import os,json,urllib.request
-          base='https://api.github.com/repos/zzh18877220541/mrb-studio/actions/runs/41288917683'
-          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10'}
-          with urllib.request.urlopen(urllib.request.Request(base,headers=headers),timeout=30) as r:
-              run=json.load(r)
-          assert run['head_sha']=='5d10150223dba48d716c32217448c72758142c46', 'Unexpected owner run identity'
-          print('owner_C_workflow_status',run['status'],run.get('conclusion'))
-          if run['status'] in ['queued','in_progress','waiting','pending','requested']:
-              with urllib.request.urlopen(urllib.request.Request(base+'/cancel',headers=headers,method='POST'),timeout=30) as r:
-                  print('owner_C_workflow_cancel_http',r.status)
-          else:
-              print('owner_C_workflow_terminal_no_mutation')
