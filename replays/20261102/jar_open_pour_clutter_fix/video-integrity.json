@@ -1,0 +1,168 @@
+{
+  "seed1/robot_b_left_wrist.mp4": {
+    "parts": [
+      "seed1/robot_b_left_wrist.mp4.part000",
+      "seed1/robot_b_left_wrist.mp4.part001",
+      "seed1/robot_b_left_wrist.mp4.part002",
+      "seed1/robot_b_left_wrist.mp4.part003"
+    ],
+    "sha256": "cd5d634a95f4e1e66001df26cb438e8b0aab41c8a6b5a8e14574813b439196a1",
+    "size": 2926109
+  },
+  "seed1/overview.mp4": {
+    "parts": [
+      "seed1/overview.mp4.part000",
+      "seed1/overview.mp4.part001",
+      "seed1/overview.mp4.part002",
+      "seed1/overview.mp4.part003",
+      "seed1/overview.mp4.part004",
+      "seed1/overview.mp4.part005",
+      "seed1/overview.mp4.part006",
+      "seed1/overview.mp4.part007"
+    ],
+    "sha256": "4569f0b2cd7f6574069a4ac382fa9130e5dd55b42a261b14ba84e5b250a33a0d",
+    "size": 6098769
+  },
+  "seed1/robot_a_left_wrist.mp4": {
+    "parts": [
+      "seed1/robot_a_left_wrist.mp4.part000",
+      "seed1/robot_a_left_wrist.mp4.part001",
+      "seed1/robot_a_left_wrist.mp4.part002"
+    ],
+    "sha256": "8f6e38a41d6bea466f5db381b0707ed3c2080ee5b04062bd6955f0286ed2833c",
+    "size": 1851309
+  },
+  "seed4/robot_b_left_wrist.mp4": {
+    "parts": [
+      "seed4/robot_b_left_wrist.mp4.part000",
+      "seed4/robot_b_left_wrist.mp4.part001",
+      "seed4/robot_b_left_wrist.mp4.part002",
+      "seed4/robot_b_left_wrist.mp4.part003"
+    ],
+    "sha256": "e30dc857a417016e69f58a70565f8faa0d84483af052ebed4dab5129795a8085",
+    "size": 2808218
+  },
+  "seed4/overview.mp4": {
+    "parts": [
+      "seed4/overview.mp4.part000",
+      "seed4/overview.mp4.part001",
+      "seed4/overview.mp4.part002",
+      "seed4/overview.mp4.part003",
+      "seed4/overview.mp4.part004",
+      "seed4/overview.mp4.part005",
+      "seed4/overview.mp4.part006",
+      "seed4/overview.mp4.part007"
+    ],
+    "sha256": "15272e1b7841004033c71239b3e97f154af6519e429fb1c61d31972abca1fb75",
+    "size": 6070713
+  },
+  "seed4/robot_a_left_wrist.mp4": {
+    "parts": [
+      "seed4/robot_a_left_wrist.mp4.part000",
+      "seed4/robot_a_left_wrist.mp4.part001",
+      "seed4/robot_a_left_wrist.mp4.part002"
+    ],
+    "sha256": "7b4763dc6a40f12a7db25bf6ff07ac0c9747a4a1d49ee29c4690444e4bf9a942",
+    "size": 1714042
+  },
+  "seed2/robot_b_left_wrist.mp4": {
+    "parts": [
+      "seed2/robot_b_left_wrist.mp4.part000",
+      "seed2/robot_b_left_wrist.mp4.part001",
+      "seed2/robot_b_left_wrist.mp4.part002",
+      "seed2/robot_b_left_wrist.mp4.part003"
+    ],
+    "sha256": "0df936e38cbf956daeabe7fa9091d0aab2c5d285d5c00ba69cbd0ab2a2f64126",
+    "size": 2740705
+  },
+  "seed2/overview.mp4": {
+    "parts": [
+      "seed2/overview.mp4.part000",
+      "seed2/overview.mp4.part001",
+      "seed2/overview.mp4.part002",
+      "seed2/overview.mp4.part003",
+      "seed2/overview.mp4.part004",
+      "seed2/overview.mp4.part005",
+      "seed2/overview.mp4.part006",
+      "seed2/overview.mp4.part007",
+      "seed2/overview.mp4.part008"
+    ],
+    "sha256": "ab65aad375659b876fe6ca88132ef1a0369c750033d2e03b2079d432ea45aad2",
+    "size": 6293848
+  },
+  "seed2/robot_a_left_wrist.mp4": {
+    "parts": [
+      "seed2/robot_a_left_wrist.mp4.part000",
+      "seed2/robot_a_left_wrist.mp4.part001",
+      "seed2/robot_a_left_wrist.mp4.part002"
+    ],
+    "sha256": "9097cd311b78865c7720fb778f0f5d6bcb0e1f76e6e2a48e68126234f8a09065",
+    "size": 1886627
+  },
+  "seed3/robot_b_left_wrist.mp4": {
+    "parts": [
+      "seed3/robot_b_left_wrist.mp4.part000",
+      "seed3/robot_b_left_wrist.mp4.part001",
+      "seed3/robot_b_left_wrist.mp4.part002",
+      "seed3/robot_b_left_wrist.mp4.part003"
+    ],
+    "sha256": "6eed559c6d0c9060c0ffb069f13b7e1acf8188733b07509fe3555abf90b94fa9",
+    "size": 2616696
+  },
+  "seed3/overview.mp4": {
+    "parts": [
+      "seed3/overview.mp4.part000",
+      "seed3/overview.mp4.part001",
+      "seed3/overview.mp4.part002",
+      "seed3/overview.mp4.part003",
+      "seed3/overview.mp4.part004",
+      "seed3/overview.mp4.part005",
+      "seed3/overview.mp4.part006"
+    ],
+    "sha256": "0b34803ea89fb0008be49395fb797bb2ebe4fd8c94a8ce2531cf92249717f73b",
+    "size": 5456433
+  },
+  "seed3/robot_a_left_wrist.mp4": {
+    "parts": [
+      "seed3/robot_a_left_wrist.mp4.part000",
+      "seed3/robot_a_left_wrist.mp4.part001",
+      "seed3/robot_a_left_wrist.mp4.part002",
+      "seed3/robot_a_left_wrist.mp4.part003"
+    ],
+    "sha256": "8275473e71cbd4d84b81fd7c8f38b30ba2e5de97819752c784d65a47ec4d7167",
+    "size": 2955415
+  },
+  "seed0/robot_b_left_wrist.mp4": {
+    "parts": [
+      "seed0/robot_b_left_wrist.mp4.part000",
+      "seed0/robot_b_left_wrist.mp4.part001",
+      "seed0/robot_b_left_wrist.mp4.part002",
+      "seed0/robot_b_left_wrist.mp4.part003"
+    ],
+    "sha256": "e3ed736a316eae1ff2f58cb09408de54bf6ff7c1aa83ab21285f7f4f99786c7a",
+    "size": 2760424
+  },
+  "seed0/overview.mp4": {
+    "parts": [
+      "seed0/overview.mp4.part000",
+      "seed0/overview.mp4.part001",
+      "seed0/overview.mp4.part002",
+      "seed0/overview.mp4.part003",
+      "seed0/overview.mp4.part004",
+      "seed0/overview.mp4.part005",
+      "seed0/overview.mp4.part006",
+      "seed0/overview.mp4.part007"
+    ],
+    "sha256": "3dcdff390828efc6e702b03044533e9006d24cfab26ba314ef07a47f6e20b9af",
+    "size": 5882294
+  },
+  "seed0/robot_a_left_wrist.mp4": {
+    "parts": [
+      "seed0/robot_a_left_wrist.mp4.part000",
+      "seed0/robot_a_left_wrist.mp4.part001",
+      "seed0/robot_a_left_wrist.mp4.part002"
+    ],
+    "sha256": "b44a3c6877be30fdd1d25030e3bbf1572ac987ec0641318723a7f693a5bf80ed",
+    "size": 1931534
+  }
+}
