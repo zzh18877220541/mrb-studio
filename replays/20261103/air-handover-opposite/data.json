@@ -1,0 +1,96 @@
+{
+  "title": "B正手接取 · 对面机位",
+  "generated": "2026-11-03",
+  "scheme": "warm-ivory-A",
+  "source": "3175f8183",
+  "tasks": [
+    {
+      "id": "air_handover_cube",
+      "name": "空中手递手",
+      "desc": "A递出长条，B正手接取、竖放入盒，双方归位",
+      "status": "新版小批验证通过",
+      "accepted": 3,
+      "episodes": [
+        {
+          "id": "seed0",
+          "episode": "随机布局 0",
+          "seed": 0,
+          "phase": "pilot",
+          "steps": 897,
+          "seconds": 29.9,
+          "note": "完成 · 11项物理检查通过 · 100分",
+          "views": [
+            {
+              "label": "全景",
+              "file": "seed0/overview.mp4",
+              "mb": 2.35
+            },
+            {
+              "label": "A 腕相机",
+              "file": "seed0/robot_a_left_wrist.mp4",
+              "mb": 1.49
+            },
+            {
+              "label": "B 腕相机",
+              "file": "seed0/robot_b_left_wrist.mp4",
+              "mb": 1.14
+            }
+          ]
+        },
+        {
+          "id": "seed1",
+          "episode": "随机布局 1",
+          "seed": 1,
+          "phase": "pilot",
+          "steps": 893,
+          "seconds": 29.77,
+          "note": "完成 · 11项物理检查通过 · 100分",
+          "views": [
+            {
+              "label": "全景",
+              "file": "seed1/overview.mp4",
+              "mb": 2.2
+            },
+            {
+              "label": "A 腕相机",
+              "file": "seed1/robot_a_left_wrist.mp4",
+              "mb": 1.48
+            },
+            {
+              "label": "B 腕相机",
+              "file": "seed1/robot_b_left_wrist.mp4",
+              "mb": 0.98
+            }
+          ]
+        },
+        {
+          "id": "seed2",
+          "episode": "随机布局 2",
+          "seed": 2,
+          "phase": "pilot",
+          "steps": 863,
+          "seconds": 28.77,
+          "note": "完成 · 11项物理检查通过 · 100分",
+          "views": [
+            {
+              "label": "全景",
+              "file": "seed2/overview.mp4",
+              "mb": 2.09
+            },
+            {
+              "label": "A 腕相机",
+              "file": "seed2/robot_a_left_wrist.mp4",
+              "mb": 1.04
+            },
+            {
+              "label": "B 腕相机",
+              "file": "seed2/robot_b_left_wrist.mp4",
+              "mb": 0.93
+            }
+          ]
+        }
+      ],
+      "note": "本页使用已确认的对面overview机位；保留原视角历史录像。"
+    }
+  ]
+}
