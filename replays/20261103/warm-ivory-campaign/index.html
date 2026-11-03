@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>纯色方案采集样片 · 2026-11-03</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f6f4ee;color:#241f18;font:16px/1.65 system-ui,"Noto Sans SC",sans-serif}
+  main{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+  a{color:#8a4a1c}
+  h1{font-size:28px;line-height:1.2;margin:10px 0 8px}
+  h2{font-size:20px;margin:34px 0 10px;padding-bottom:6px;border-bottom:2px solid #241f18}
+  .muted{color:#6a6152}
+  .meta{font-family:ui-monospace,monospace;font-size:13px;letter-spacing:.02em;color:#6a6152}
+  .controls{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 10px}
+  select{font:inherit;border:1px solid #d8cfbc;border-radius:8px;background:#fff;padding:9px 12px;color:inherit}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}
+  .chips button{font:inherit;font-size:14px;border:1px solid #d8cfbc;border-radius:999px;background:#fff;padding:5px 12px;cursor:pointer;color:inherit}
+  .chips button.active{background:#8a4a1c;border-color:#8a4a1c;color:#fff}
+  .chips button .f{color:#a33529;font-size:12px;margin-left:4px}
+  .chips button.active .f{color:#ffd9cf}
+  .player{background:#fff;border:1px solid #e2d9c6;border-radius:12px;padding:12px;margin-top:6px}
+  video{display:block;width:100%;max-height:66vh;background:#0d0c0a;border-radius:8px}
+  .status{padding:10px 2px 2px;font-size:14px;min-height:24px}
+  .bad{color:#a33529}.good{color:#2f6b34}
+  .download{display:inline-block;margin-top:8px;font-size:14px}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid #e2d9c6}
+  th{font-weight:600;color:#6a6152}
+  .tablewrap{overflow-x:auto}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+  .card{background:#fff;border:1px solid #e2d9c6;border-radius:10px;padding:12px 14px}
+  .card b{display:block;font-size:15px}
+  .card span{font-size:13px;color:#6a6152}
+  .card .note{display:block;margin-top:6px;font-size:12.5px;color:#8a4a1c}
+  .notice{background:#fff6ea;border:1px solid #e8cfae;border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14px}
+  ul{padding-left:20px}
+  li{margin:4px 0}
+  @media(max-width:520px){main{padding:20px 16px 48px}h1{font-size:23px}}
+</style>
+<main>
+  <a href="../../">← 录像总站</a>
+  <h1>warm-ivory 纯色方案 · 采集样片快照</h1>
+  <p class="muted">一卡一任务、每任务 100 条。冻结源 <span class="meta">842311e1a</span>，纯色牙白背景 + 胡桃木桌面，机器人原色不变。
+    下面是从已通过视觉准入（accepted）且物理成功的 episode 里挑出的样片，原画质，可切三路视角。采集仍在进行，本页是快照。</p>
+  <p class="meta" id="head"></p>
+  <div class="notice" id="notice" hidden></div>
+
+  <div class="controls">
+    <label>任务 <select id="task"></select></label>
+  </div>
+  <div class="chips" id="eps"></div>
+  <div class="player">
+    <video id="video" controls playsinline preload="metadata"></video>
+    <div class="chips" id="views"></div>
+    <div class="status" id="status"></div>
+    <a class="download" id="download" download>下载当前视角原片</a>
+  </div>
+
+  <h2>本任务样片</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>episode</th><th>seed</th><th>阶段</th><th>步数</th><th>时长</th><th>视角</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+
+  <h2>各任务进度</h2>
+  <div class="cards" id="cards"></div>
+
+  <h2>没进入正式采集的</h2>
+  <ul>
+    <li><b>press_lid_attach_block</b>：pilot 10 次尝试 6 次失败（60%），按下侧接触力丢失、贴合不严（seal_not_flush）、贴座不稳等判据，触发 50% 失败率策略，正式采集取消。本页附两条成功的 pilot 样片。</li>
+    <li><b>dual_tray_pour</b>：任务代码报错，所有 seed 都失败。真实原因是固定色把桌面/底座绑在 body root，压过纯色支撑材质，视觉初始化抛 <code>Texture diffuseColor has no connection</code>；随后的 <code>extra_files</code> 又把真实错误盖成 AttributeError。单 seed 复现已确认，待修材质绑定。</li>
+    <li><b>held_panel_brush / jar_open_pour / car_assembly</b>：缺外观准入声明（<code>appearance_review</code> / <code>appearance_admission</code>），没有绕过，未开始采集。</li>
+  </ul>
+  <p class="muted">本页只发布录像与 episode 元数据，不含轨迹、深度、标注或任务源码。录像以 <code>-c copy</code> 无损前置索引，未重新编码。</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let data, ti = 0, ei = 0, vi = -1;
+
+function viewButtons(views, cur) {
+  const box = $('views'); box.replaceChildren();
+  views.forEach((v, i) => {
+    const b = document.createElement('button');
+    b.textContent = v.label + ' · ' + v.mb + 'MB';
+    b.classList.toggle('active', i === cur);
+    b.onclick = () => play(i);
+    box.append(b);
+  });
+}
+
+function play(i) {
+  const ep = data.tasks[ti].episodes[ei], v = ep.views[i];
+  const video = $('video');
+  const time = vi >= 0 ? (video.currentTime || 0) : 0;
+  vi = i;
+  video.src = v.file;
+  video.addEventListener('loadedmetadata', () => {
+    if (time > 0) video.currentTime = Math.min(time, Math.max(0, video.duration - 0.1));
+  }, { once: true });
+  $('download').href = v.file;
+  $('download').setAttribute('download', v.file.split('/').pop());
+  viewButtons(ep.views, i);
+  $('status').innerHTML = `<b>${ep.episode}</b> · seed ${ep.seed} · ${ep.phase === 'pilot' ? 'pilot 小批量' : '正式采集'}`
+    + ` · ${ep.steps} 步 · ${ep.seconds} 秒 · <span class="good">${ep.note || '完成'}</span>`;
+}
+
+function showEpisode(i) {
+  ei = i; vi = -1;
+  const t = data.tasks[ti];
+  document.querySelectorAll('#eps button').forEach((b, n) => b.classList.toggle('active', n === i));
+  const rows = $('rows'); rows.replaceChildren();
+  t.episodes.forEach((ep, k) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td><a href="#" data-k="${k}">${ep.episode}</a></td><td>${ep.seed}</td>`
+      + `<td>${ep.phase === 'pilot' ? 'pilot' : 'formal'}</td><td>${ep.steps}</td>`
+      + `<td>${ep.seconds} s</td><td>${ep.views.length}</td>`;
+    rows.append(tr);
+  });
+  rows.querySelectorAll('a').forEach(a => a.onclick = e => { e.preventDefault(); showEpisode(+a.dataset.k); });
+  play(0);
+}
+
+function showTask(i) {
+  ti = i;
+  const t = data.tasks[i];
+  const n = $('notice');
+  n.hidden = !t.note;
+  n.textContent = t.note || '';
+  const box = $('eps'); box.replaceChildren();
+  t.episodes.forEach((ep, k) => {
+    const b = document.createElement('button');
+    b.innerHTML = `${ep.episode}<span class="f">seed ${ep.seed}</span>`;
+    b.onclick = () => showEpisode(k);
+    box.append(b);
+  });
+  $('cards').innerHTML = '';
+  data.tasks.forEach(x => {
+    const d = document.createElement('div');
+    d.className = 'card';
+    const p = x.pilot && x.pilot.recorded ? ` · pilot ${x.pilot.success}/${x.pilot.recorded}` : '';
+    d.innerHTML = `<b>${x.name} <span class="meta">${x.id}</span></b><span>${x.status} · 已接受 ${x.accepted}/100${p}</span>`
+      + (x.note ? `<span class="note">${x.note}</span>` : '');
+    $('cards').append(d);
+  });
+  showEpisode(0);
+}
+
+fetch('data.json').then(r => r.json()).then(d => {
+  data = d;
+  $('head').textContent = `${d.title} · 生成 ${d.generated} · 方案 ${d.scheme} · 源 ${d.source}`
+    + ` · 印章 ${d.stamp.accepted}/${d.stamp.attempts} 次尝试成功`;
+  const sel = $('task');
+  d.tasks.forEach((t, i) => {
+    const o = document.createElement('option');
+    o.value = i; o.textContent = `${t.name}（${t.id}）`;
+    sel.append(o);
+  });
+  sel.onchange = () => showTask(+sel.value);
+  showTask(0);
+});
+</script>
+</html>

@@ -1,0 +1,550 @@
+{
+ "schema": "mrb-replay/1",
+ "title": "warm-ivory 纯色方案 · 采集样片快照",
+ "generated": "2026-11-03 17:10",
+ "scheme": "warm-ivory-A",
+ "source": "842311e1a",
+ "stamp": {
+  "accepted": 100,
+  "attempts": 111,
+  "failures": 11
+ },
+ "tasks": [
+  {
+   "id": "plate_stack_cube",
+   "name": "两人叠塔",
+   "desc": "A 放扁板、B 叠方块",
+   "status": "正式采集进行中",
+   "accepted": 12,
+   "episodes": [
+    {
+     "id": "ep_000003-pilot",
+     "episode": "ep_000003",
+     "seed": 310009,
+     "phase": "pilot",
+     "steps": 740,
+     "seconds": 24.7,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "plate_stack_cube/ep_000003-pilot/overview.mp4",
+       "mb": 1.56
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "plate_stack_cube/ep_000003-pilot/robot_a_left_wrist.mp4",
+       "mb": 1.12
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "plate_stack_cube/ep_000003-pilot/robot_b_left_wrist.mp4",
+       "mb": 1.12
+      }
+     ]
+    },
+    {
+     "id": "ep_000003",
+     "episode": "ep_000003",
+     "seed": 311006,
+     "phase": "formal",
+     "steps": 844,
+     "seconds": 28.1,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "plate_stack_cube/ep_000003/overview.mp4",
+       "mb": 1.94
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "plate_stack_cube/ep_000003/robot_a_left_wrist.mp4",
+       "mb": 1.85
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "plate_stack_cube/ep_000003/robot_b_left_wrist.mp4",
+       "mb": 1.8
+      }
+     ]
+    }
+   ],
+   "pilot": {},
+   "failure_rate": 0,
+   "physical_failures": 0,
+   "note": ""
+  },
+  {
+   "id": "lid_box_cube",
+   "name": "开盖放块",
+   "desc": "掀盖、取块、放回",
+   "status": "正式采集进行中",
+   "accepted": 51,
+   "episodes": [
+    {
+     "id": "ep_000008",
+     "episode": "ep_000008",
+     "seed": 321008,
+     "phase": "formal",
+     "steps": 1436,
+     "seconds": 47.9,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "lid_box_cube/ep_000008/overview.mp4",
+       "mb": 2.51
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "lid_box_cube/ep_000008/robot_a_left_wrist.mp4",
+       "mb": 1.22
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "lid_box_cube/ep_000008/robot_b_left_wrist.mp4",
+       "mb": 2.75
+      }
+     ]
+    },
+    {
+     "id": "ep_000009",
+     "episode": "ep_000009",
+     "seed": 321009,
+     "phase": "formal",
+     "steps": 1053,
+     "seconds": 35.1,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "lid_box_cube/ep_000009/overview.mp4",
+       "mb": 2.13
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "lid_box_cube/ep_000009/robot_a_left_wrist.mp4",
+       "mb": 0.97
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "lid_box_cube/ep_000009/robot_b_left_wrist.mp4",
+       "mb": 1.53
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 10,
+    "accepted": 9,
+    "success": 9,
+    "failure": 1
+   },
+   "failure_rate": 0.1,
+   "physical_failures": 6,
+   "note": ""
+  },
+  {
+   "id": "dual_rod_hang",
+   "name": "双杆悬挂",
+   "desc": "双机持杆对准挂钩落稳",
+   "status": "正式采集进行中",
+   "accepted": 35,
+   "episodes": [
+    {
+     "id": "ep_000003",
+     "episode": "ep_000003",
+     "seed": 341003,
+     "phase": "formal",
+     "steps": 2036,
+     "seconds": 67.9,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "dual_rod_hang/ep_000003/overview.mp4",
+       "mb": 3.81
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "dual_rod_hang/ep_000003/robot_a_left_wrist.mp4",
+       "mb": 2.94
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "dual_rod_hang/ep_000003/robot_b_left_wrist.mp4",
+       "mb": 2.89
+      }
+     ]
+    },
+    {
+     "id": "ep_000004",
+     "episode": "ep_000004",
+     "seed": 341004,
+     "phase": "formal",
+     "steps": 1573,
+     "seconds": 52.4,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "dual_rod_hang/ep_000004/overview.mp4",
+       "mb": 2.61
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "dual_rod_hang/ep_000004/robot_a_left_wrist.mp4",
+       "mb": 2.32
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "dual_rod_hang/ep_000004/robot_b_left_wrist.mp4",
+       "mb": 2.42
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 10,
+    "accepted": 9,
+    "success": 9,
+    "failure": 1
+   },
+   "failure_rate": 0.1,
+   "physical_failures": 4,
+   "note": ""
+  },
+  {
+   "id": "dual_balance_load",
+   "name": "天平装载",
+   "desc": "双臂无围栏同步装载",
+   "status": "正式采集进行中",
+   "accepted": 58,
+   "episodes": [
+    {
+     "id": "ep_000008",
+     "episode": "ep_000008",
+     "seed": 381008,
+     "phase": "formal",
+     "steps": 1317,
+     "seconds": 43.9,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "dual_balance_load/ep_000008/overview.mp4",
+       "mb": 2.61
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "dual_balance_load/ep_000008/robot_a_left_wrist.mp4",
+       "mb": 1.84
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "dual_balance_load/ep_000008/robot_b_left_wrist.mp4",
+       "mb": 2.48
+      }
+     ]
+    },
+    {
+     "id": "ep_000009",
+     "episode": "ep_000009",
+     "seed": 381009,
+     "phase": "formal",
+     "steps": 1249,
+     "seconds": 41.6,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "dual_balance_load/ep_000009/overview.mp4",
+       "mb": 2.77
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "dual_balance_load/ep_000009/robot_a_left_wrist.mp4",
+       "mb": 1.53
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "dual_balance_load/ep_000009/robot_b_left_wrist.mp4",
+       "mb": 2.05
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 10,
+    "accepted": 9,
+    "success": 9,
+    "failure": 1
+   },
+   "failure_rate": 0.1,
+   "physical_failures": 3,
+   "note": ""
+  },
+  {
+   "id": "air_handover_cube",
+   "name": "空中手递手",
+   "desc": "两台 Panda 空中交接长条",
+   "status": "正式采集进行中",
+   "accepted": 14,
+   "episodes": [
+    {
+     "id": "ep_000007",
+     "episode": "ep_000007",
+     "seed": 401007,
+     "phase": "formal",
+     "steps": 985,
+     "seconds": 32.8,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "air_handover_cube/ep_000007/overview.mp4",
+       "mb": 1.7
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "air_handover_cube/ep_000007/robot_a_left_wrist.mp4",
+       "mb": 1.21
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "air_handover_cube/ep_000007/robot_b_left_wrist.mp4",
+       "mb": 1.09
+      }
+     ]
+    },
+    {
+     "id": "ep_000008",
+     "episode": "ep_000008",
+     "seed": 401009,
+     "phase": "formal",
+     "steps": 1126,
+     "seconds": 37.5,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "air_handover_cube/ep_000008/overview.mp4",
+       "mb": 1.81
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "air_handover_cube/ep_000008/robot_a_left_wrist.mp4",
+       "mb": 0.92
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "air_handover_cube/ep_000008/robot_b_left_wrist.mp4",
+       "mb": 1.0
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 10,
+    "accepted": 9,
+    "success": 9,
+    "failure": 1
+   },
+   "failure_rate": 0.1,
+   "physical_failures": 0,
+   "note": "本页为空中交接旧专家版本（842311e1a）的历史采集样片，不代表已确认的 B 正手接取新版。"
+  },
+  {
+   "id": "press_lid_attach_block",
+   "name": "压盖贴块",
+   "desc": "压盖贴合（失败率高，已跳过）",
+   "status": "按失败率跳过",
+   "accepted": 6,
+   "episodes": [
+    {
+     "id": "ep_000008-pilot",
+     "episode": "ep_000008",
+     "seed": 330008,
+     "phase": "pilot",
+     "steps": 551,
+     "seconds": 18.4,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "press_lid_attach_block/ep_000008-pilot/overview.mp4",
+       "mb": 1.13
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "press_lid_attach_block/ep_000008-pilot/robot_a_left_wrist.mp4",
+       "mb": 0.51
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "press_lid_attach_block/ep_000008-pilot/robot_b_left_wrist.mp4",
+       "mb": 0.84
+      }
+     ]
+    },
+    {
+     "id": "ep_000009-pilot",
+     "episode": "ep_000009",
+     "seed": 330009,
+     "phase": "pilot",
+     "steps": 733,
+     "seconds": 24.4,
+     "note": "completed",
+     "views": [
+      {
+       "label": "全景 · overview",
+       "file": "press_lid_attach_block/ep_000009-pilot/overview.mp4",
+       "mb": 1.42
+      },
+      {
+       "label": "robot_a · left_wrist",
+       "file": "press_lid_attach_block/ep_000009-pilot/robot_a_left_wrist.mp4",
+       "mb": 0.87
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "press_lid_attach_block/ep_000009-pilot/robot_b_left_wrist.mp4",
+       "mb": 1.67
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 10,
+    "accepted": 4,
+    "success": 4,
+    "failure": 6
+   },
+   "failure_rate": 0.6,
+   "physical_failures": 6,
+   "note": "正式采集已按 50% 失败率策略取消；这里只有成功的 pilot 样片。"
+  },
+  {
+   "id": "shared_stamp",
+   "name": "公用印章",
+   "desc": "固定场景盖章",
+   "status": "已完成",
+   "accepted": 100,
+   "episodes": [
+    {
+     "id": "ep_000021-part1",
+     "episode": "ep_000021",
+     "seed": 200021,
+     "phase": "formal",
+     "steps": 1428,
+     "seconds": 47.6,
+     "note": "completed",
+     "views": [
+      {
+       "label": "robot_a · left_wrist",
+       "file": "shared_stamp/ep_000021-part1/robot_a_left_wrist.mp4",
+       "mb": 1.56
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "shared_stamp/ep_000021-part1/robot_b_left_wrist.mp4",
+       "mb": 1.55
+      },
+      {
+       "label": "全景 · overview",
+       "file": "shared_stamp/ep_000021-part1/overview.mp4",
+       "mb": 1.99
+      }
+     ]
+    },
+    {
+     "id": "ep_000022-part3",
+     "episode": "ep_000022",
+     "seed": 220022,
+     "phase": "formal",
+     "steps": 1448,
+     "seconds": 48.3,
+     "note": "completed",
+     "views": [
+      {
+       "label": "robot_a · left_wrist",
+       "file": "shared_stamp/ep_000022-part3/robot_a_left_wrist.mp4",
+       "mb": 2.57
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "shared_stamp/ep_000022-part3/robot_b_left_wrist.mp4",
+       "mb": 2.99
+      },
+      {
+       "label": "全景 · overview",
+       "file": "shared_stamp/ep_000022-part3/overview.mp4",
+       "mb": 2.32
+      }
+     ]
+    },
+    {
+     "id": "ep_000016-part5",
+     "episode": "ep_000016",
+     "seed": 240016,
+     "phase": "formal",
+     "steps": 1602,
+     "seconds": 53.4,
+     "note": "completed",
+     "views": [
+      {
+       "label": "robot_a · left_wrist",
+       "file": "shared_stamp/ep_000016-part5/robot_a_left_wrist.mp4",
+       "mb": 2.67
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "shared_stamp/ep_000016-part5/robot_b_left_wrist.mp4",
+       "mb": 3.01
+      },
+      {
+       "label": "全景 · overview",
+       "file": "shared_stamp/ep_000016-part5/overview.mp4",
+       "mb": 2.73
+      }
+     ]
+    },
+    {
+     "id": "ep_000007-part7",
+     "episode": "ep_000007",
+     "seed": 260007,
+     "phase": "formal",
+     "steps": 1421,
+     "seconds": 47.4,
+     "note": "completed",
+     "views": [
+      {
+       "label": "robot_a · left_wrist",
+       "file": "shared_stamp/ep_000007-part7/robot_a_left_wrist.mp4",
+       "mb": 2.48
+      },
+      {
+       "label": "robot_b · left_wrist",
+       "file": "shared_stamp/ep_000007-part7/robot_b_left_wrist.mp4",
+       "mb": 2.78
+      },
+      {
+       "label": "全景 · overview",
+       "file": "shared_stamp/ep_000007-part7/overview.mp4",
+       "mb": 2.41
+      }
+     ]
+    }
+   ],
+   "pilot": {
+    "recorded": 111,
+    "accepted": 100,
+    "success": 100,
+    "failure": 11
+   },
+   "failure_rate": 0,
+   "note": "昨晚完成：7 段并行，100 条接受 / 111 次物理尝试。"
+  }
+ ]
+}
