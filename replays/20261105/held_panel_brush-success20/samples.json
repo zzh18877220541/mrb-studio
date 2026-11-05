@@ -1,0 +1,409 @@
+{
+  "version": "V18",
+  "sample_count": 20,
+  "population": 100,
+  "method": "从100条物理成功记录中随机无放回抽20条",
+  "selection_seed": 20261105,
+  "rows": [
+    {
+      "index": 1,
+      "seed": 2707561,
+      "seconds": 73.7,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000016/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000016/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000016/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "seed": 2707654,
+      "seconds": 70.47,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000109/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000109/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000109/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "seed": 2707564,
+      "seconds": 70.77,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000019/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000019/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000019/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "seed": 2707640,
+      "seconds": 69.9,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000095/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000095/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000095/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "seed": 2707557,
+      "seconds": 73.13,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000013/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000013/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000013/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "seed": 2707606,
+      "seconds": 73.77,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000061/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000061/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000061/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "seed": 2707643,
+      "seconds": 74.97,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000098/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000098/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000098/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "seed": 2707646,
+      "seconds": 75.2,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000101/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000101/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000101/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "seed": 2707566,
+      "seconds": 78.83,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000020/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000020/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000020/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "seed": 2707610,
+      "seconds": 77.47,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000065/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000065/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000065/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "seed": 2707586,
+      "seconds": 72.53,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000041/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000041/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000041/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "seed": 2707651,
+      "seconds": 76.5,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000106/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000106/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000106/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "seed": 2707662,
+      "seconds": 76.87,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000117/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000117/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000117/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "seed": 2707665,
+      "seconds": 67.63,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000120/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000120/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000120/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "seed": 2707615,
+      "seconds": 75.9,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000070/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000070/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000070/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "seed": 2707590,
+      "seconds": 69.47,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000045/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000045/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000045/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "seed": 2707568,
+      "seconds": 71.77,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000023/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000023/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000023/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "seed": 2707548,
+      "seconds": 71.4,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000002/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000002/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000002/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "seed": 2707588,
+      "seconds": 74.13,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000043/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000043/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000043/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "seed": 2707582,
+      "seconds": 70.73,
+      "poster": "",
+      "views": [
+        {
+          "label": "总览",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000037/video/overview.mp4"
+        },
+        {
+          "label": "持板手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000037/video/robot_a_left_wrist.mp4"
+        },
+        {
+          "label": "海绵手腕",
+          "file": "https://mrb-studio.tail858ede.ts.net/demo-media/07bd2b5373000f266ea93fa9/ep_000037/video/robot_b_left_wrist.mp4"
+        }
+      ]
+    }
+  ]
+}
